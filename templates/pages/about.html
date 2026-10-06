@@ -11,10 +11,32 @@ About Me
 {% endblock css %}
 
 {% block content %}
-<h1>About Me</h1>
-<div class="about-avatar">
-    <img src ="{% static 'img/avatar.png' %}" alt="my-avatar">
-</div>
-
-Hello, I am Jon a student at San Diego Global Knowledge University. I am studying full stack web developement, and will be completing my certification soon. My interest include software design, video games and hiking.
+<section class="about">
+    <div class="about__info">
+        <div class="about__avatar">
+            <img src ="{% static 'img/avatar.png' %}" alt="my-avatar">
+        </div>
+        <div class="about__bio">
+            <p class="about__title">About Me</p>
+            <h1 class="about__name">Hi, Im Jon</h1>
+            <p class="about__profession">Full Stack Development Student</p>
+            <p class="about__narrative">Hello, I am Jon a student at San Diego Global Knowledge University. I am studying full stack web developement, and will be completing my certification soon. My interest include software design, interior design, and sail boating. </p>
+            <a href="{% url 'contact' %}"><button>Contact Me</button></a>
+        </div>
+    </div>    
+    <div class="about__skills">
+        <div>
+            <h2>Core Web</h2>
+            <p>HTML, CSS, JS</p>
+        </div>
+        <div>
+            <h2>Frameworks</h2>
+            <P>React, Flask, Django</P>
+        </div>
+        <div>
+            <h2>API and Database</h2>
+            <p>SQL, REST API, JSON</p>
+        </div>
+    </div>
+</section>
 {% endblock content %}

@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{%static 'css/base.css'}">
     <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block css %}
     {% endblock css %}
 </head>
 <body>
     <header>
         <nav>
-            <div class="nav-name">
+            <div class="nav__name">
                 Jon Doe
             </div>
-            <div>
+            <div class="nav__links">
                 <a href="{% url 'about' %}"> About </a>
                 <a href="{% url 'contact' %}">Contact</a>
                 <a href="{% url 'experience' %}">Experience</a>

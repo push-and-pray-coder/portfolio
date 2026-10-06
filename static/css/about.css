@@ -1,3 +1,52 @@
-.about-avatar img{
-    width: 200px;
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.about__info{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    /* margin: 64px; */
+}
+
+.about__avatar{
+    flex-basis: 30%; /*tells flexbox to start at 30% and resize as necessary*/
+}
+
+.about__avatar img{
+    width: 100%; /* scale the img block to the parent containers box*/
+    height: 100%;
+    object-fit: cover; /*set the aspect ratio of the img to match the parent box, crop anything that dosent fit*/
+}
+
+.about__bio {
+    width: 70%; 
+    flex-shrink: 0; /* prevents flexbox from overriding width */
+    flex-grow: 0; /* prevents flexbox from overriding width */
+}
+
+.about__bio button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color:grey;
+    border-style: solid;
+    background-color:#f1f4f7;
+
+}
+
+.about__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.about__skills > div { /* > target all child elements of the following type*/
+    padding: 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    text-align: center;
 }

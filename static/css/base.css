@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box; /*account for all factors in a blocks size*/
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+    justify-content: space-between;
+    background-color: #f1f4f7;
+}
+
+body{
+    min-height: 100vh; /*sets the minimum view height for the block*/
+    display: flex;
+    flex-direction: column;
+    margin: 0; /*by default  body has a 8px margin"*/
+}
+
+main{
+    flex: 1;
+    padding: 32px;
+}
+
+footer{
+    text-align: center;
+    font-size: .85rem;
+    line-height: 1.5;
+    background-color: #f1f4f7;
+}
+
+img {
+    max-width: 100%; /*stops image width from exceeding the screen"*/
+}
