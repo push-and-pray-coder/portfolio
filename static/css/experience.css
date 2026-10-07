@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+.skills > div {
+    /* > target all child elements of the following type*/
+    padding: 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    text-align: center;
+}
